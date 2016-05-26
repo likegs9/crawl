@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    .row.col-xs-12
+      h3 小说大全
+      .col-xs-4
+        ul.list-group
+          each i in category
+            li.list-group-item #{i.name}
+      .col-xs-8
+        ul.list-group
+          each i in article
+            li.list-group-item #{i.name}
+
+
